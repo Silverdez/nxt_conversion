@@ -1,0 +1,236 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import '@glidejs/glide/dist/css/glide.core.min.css';
+
+body {
+  @apply font-display text-textGlobal bg-globalBg
+}
+
+.pattern{
+
+}
+
+h1, h2, h3, h4, h5, h6{
+  @apply mb-6 relative
+}
+
+h1{
+  @apply text-4xl md:text-5xl font-bold mt-8
+}
+h2 {
+  @apply text-4xl md:text-5xl font-medium mt-6 font-serif
+}
+h3 {
+  @apply text-2xl md:text-3xl font-medium
+}
+h4 {
+  @apply text-xl md:text-2xl
+}
+h5 {
+  @apply text-lg md:text-xl uppercase
+}
+h6 {
+  @apply text-base md:text-lg uppercase
+}
+
+p{
+  @apply mb-4
+}
+
+.icon path{
+  @apply text-primary
+}
+
+h1:after,
+h2:after,
+h3:after,
+h4:after{
+  content: '';
+  @apply block h-full w-1 rounded-full bg-titleMark absolute -left-4 top-0
+}
+
+h1.noDecoration:after,
+h2.noDecoration:after,
+h3.noDecoration:after,
+h4.noDecoration:after{
+  content: '';
+  @apply hidden
+}
+
+/* Lists */
+ol, ul {
+  @apply text-base mb-4
+}
+ul li {
+  @apply list-inside text-base;
+  list-style-type: none;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: 20px 20px;
+  padding: 0;
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  @apply text-textAccent font-black inline-block w-1 -ml-1 mr-4
+}
+
+.noListImage ul li::before,
+ul.noListImage li::before {
+  @apply hidden
+}
+
+ol li {
+  counter-increment: my-awesome-counter;
+  @apply mb-2
+}
+ol li::before {
+  content: counter(my-awesome-counter) ;
+  @apply inline-flex items-center justify-center w-5 h-5 bg-textAccent text-white rounded-full p-1 font-medium text-center mr-3 text-0.7
+}
+
+ul li::marker {
+  @apply rounded-full w-6 h-6 bg-accent text-base mr-4;
+}
+
+
+/* Header */
+.header {
+  @apply fixed z-100 top-0 right-0 w-full transition bg-headerBg shadow-lg h-16 text-headerText
+}
+
+.header_primary {
+  @apply container mx-auto h-full px-6 flex items-center justify-between relative
+}
+
+.header.active {
+  @apply bg-headerBgSecondary text-headerMuted
+}
+
+.header_primary .header_site-logo {
+  @apply block h-auto w-28
+}
+
+.logo .logo_symbol{
+  @apply text-headerAccent
+}
+.logo .logo_text {
+
+}
+
+.header_primary .header_main-nav .menu-primary_navigation-container {
+  @apply h-full
+}
+
+.header_primary .header_main-nav{
+  @apply md:block absolute opacity-0 hidden -z-1 md:z-0 top-16 left-0 bg-headerBgSecondary lg:relative lg:top-auto lg:bg-transparent h-almost lg:h-full w-full lg:w-auto lg:opacity-100
+}
+
+.header_primary .header_main-nav .nav-header{
+  @apply flex flex-wrap relative lg:h-full
+}
+.header_primary .header_main-nav .nav-header li{
+  @apply mx-3 w-full lg:w-auto h-full lg:flex items-center
+}
+
+.header_primary .header_main-nav .nav-header a{
+  @apply  duration-300 w-full py-6 inline-block md:py-2 md:w-auto relative lg:rounded-md text-0.9 py-3 px-4 hover:text-headerAccent hover:bg-headerAccent hover:bg-opacity-5 transition flex items-center cursor-pointer
+}
+.header_primary .header_main-nav .nav-header a:hover{
+  @apply bg-accent bg-opacity-75 text-white
+}
+
+.header_primary .header_menu-toggle {
+  @apply w-10 h-10 bg-accent rounded-md flex flex-col justify-center items-center md:hidden
+}
+
+
+.header_primary .header_menu-toggle span {
+  @apply w-4/6 h-0.5 bg-white my-0.5
+}
+
+.header_primary .header_main-nav .sub-menu {
+  @apply hidden relative lg:absolute lg:top-16 bg-accent w-auto transition
+}
+
+.header_primary .header_main-nav li:hover .sub-menu{
+  @apply block
+}
+.header_primary .header_main-nav .sub-menu > li {
+  @apply mx-0 text-headerMuted
+}
+
+.header_primary .header_main-nav .sub-menu > li a{
+  @apply relative text-0.9 w-full lg:min-w-16 inline-block px-4 py-2 transition rounded-none
+}
+
+.header_primary .header_main-nav .sub-menu > li a:hover{
+  @apply bg-headerAccent text-primary
+}
+
+/* Services */
+
+.services_listing .service:nth-child(2n) > div {
+  @apply bg-cardSecondaryBg
+}
+
+/* Testimonials */
+
+
+
+/* Footer */
+.nav-footer {
+
+}
+.nav-footer li{
+  @apply text-0.9 text-footerText py-1 px-3 rounded-md hover:text-footerLink transition
+}
+
+.footer .footer_site-logo {
+  @apply block h-auto w-40
+}
+
+.footer .logo .logo_symbol{
+  @apply text-headerAccent
+}
+.footer .logo .logo_text {
+
+}
+
+/* Contact */
+.wpcf7 {
+  @apply w-2/3
+}
+
+.wpcf7 label{
+  @apply text-textLighter
+}
+
+.wpcf7 input,
+.wpcf7 textarea {
+  @apply w-full py-4 px-6 mt-3 mb-2 rounded-md border border-opacity-40 border-accent bg-white bg-opacity-5 outline-0 text-white focus:border-opacity-100
+}
+.wpcf7 input[type=button], input[type=submit] {
+  @apply w-auto py-3 px-12 rounded-md bg-accent uppercase hover:bg-white hover:text-accent transition cursor-pointer border border-accent
+}
+
+.wpcf7-not-valid-tip{
+  font-size: 0.8rem !important;
+  color: rgb(248 113 113) !important;
+  @apply mt-1
+}
+
+.wpcf7-response-output {
+  border: none !important;
+  @apply bg-red-400 text-black rounded-full
+}

@@ -1,0 +1,28 @@
+.section-services,
+.section-testimonials{
+
+}
+
+.section-services ul,
+.section-testimonials ul{
+  @apply list-none p-0 m-0 grid grid-cols-3 gap-3
+}
+
+.section-services ul li,
+.section-testimonials ul li{
+  @apply bg-gray-500 p-6
+}
+
+.section-services ul li .service_image,
+.section-services ul li .service_num,
+.section-services ul li p,
+.section-testimonials ul li p,
+.bio-container img{
+  @apply hidden
+}
+
+.section-services ul li h4,
+.section-testimonials ul li h4{
+  @apply text-white uppercase
+}
+
