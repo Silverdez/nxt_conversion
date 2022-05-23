@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@roots/bud": "5.7.7",
-    "@roots/bud-tailwindcss": "5.7.7",
+    "@roots/bud-tailwindcss": "5.8.6",
     "@roots/sage": "5.7.7",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2"
