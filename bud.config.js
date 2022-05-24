@@ -14,7 +14,6 @@ module.exports = async (app) => {
     .setPublicPath("/")
 
     .entry({
-      react: ['react', 'react-dom'],
       app: ['@scripts/app', '@styles/app'],
       editor: ['@scripts/editor', '@styles/editor'],
     })

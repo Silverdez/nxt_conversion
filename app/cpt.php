@@ -11,7 +11,7 @@ add_action( 'init', function() {
     register_extended_post_type( 'service', [
 
         'show_in_feed' => true,
-        'show_in_rest' => true,
+        'show_in_rest' => false,
         "supports" => [ "title", "editor", "thumbnail", "excerpt", "post-formats" ],
         'menu_icon'    => 'dashicons-edit',
         'archive' => [

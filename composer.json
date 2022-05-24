@@ -35,7 +35,8 @@
   },
   "autoload": {
     "psr-4": {
-      "App\\": "app/"
+      "App\\": "app/",
+      "Log1x\\AcfComposer\\": "app/"
     }
   },
   "require": {
@@ -57,7 +58,8 @@
   },
   "suggest": {
     "log1x/sage-directives": "A collection of useful Blade directives for WordPress and Sage (^1.0).",
-    "log1x/sage-svg": "A useful SVG directive for inlining SVG's within Blade views (^1.0)."
+    "log1x/sage-svg": "A useful SVG directive for inlining SVG's within Blade views (^1.0).",
+    "log1x/modern-acf-options": "Gives ACF option pages a much needed design overhaul."
   },
   "config": {
     "optimize-autoloader": true,
@@ -68,7 +70,7 @@
   "prefer-stable": true,
   "scripts": {
     "lint": [
-      "phpcs --extensions=php --standard=PSR12 app"
+      "phpcs --ignore=vendor --extensions=php --standard=PSR12 app"
     ],
     "post-autoload-dump": [
       "Roots\\Acorn\\ComposerScripts::postAutoloadDump"
@@ -77,7 +79,8 @@
   "extra": {
     "acorn": {
       "providers": [
-        "App\\Providers\\ThemeServiceProvider"
+        "App\\Providers\\ThemeServiceProvider",
+        "Log1x\\AcfComposer\\Providers\\AcfComposerServiceProvider"
       ]
     }
   }

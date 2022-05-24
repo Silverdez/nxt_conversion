@@ -2,14 +2,8 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@import '@glidejs/glide/dist/css/glide.core.min.css';
-
 body {
   @apply font-display text-textGlobal bg-globalBg
-}
-
-.pattern{
-
 }
 
 h1, h2, h3, h4, h5, h6{

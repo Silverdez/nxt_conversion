@@ -1,9 +1,8 @@
 @php
-  $fields           = get_fields(get_queried_object_id());
-  $test = get_field('biography_avatar')['url']
+  //$fields           = get_fields(get_queried_object_id());
 @endphp
 
-<div class="section-bio py-12 {{ $block->classes }}">
+<div id="{{ 'section-bio-' . $block->block->id }}" class="section-bio py-12 {{ $block->classes }}">
   @hasfield('title_bio')
     <h2 class="">
       @field('title_bio')
@@ -31,7 +30,7 @@
           @hasfield('biography_avatar')
           <div class="relative" >
             <img class="w-64 lg:w-120 " src="@field('biography_avatar', 'url')" alt="@field('biography_name')">
-            <div class="bg-cardDarkerBg rounded-full w-96 h-96 -z-1 absolute -top-6 left-1/2 transform -translate-x-1/2 shadow-black shadow-xl ring-opacity-40"></div>
+            <div class="bg-cardDarkerBg rounded-full w-56 h-56 lg:w-96 lg:h-96 -z-1 absolute -top-6 left-1/2 transform -translate-x-1/2 shadow-black shadow-xl ring-opacity-40"></div>
           </div>
           @endfield
         </div>

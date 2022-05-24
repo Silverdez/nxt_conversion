@@ -111,23 +111,6 @@ class SectionTestimonials extends Block
         ];
 
         /**
-         * The block styles.
-         *
-         * @var array
-         */
-        $this->styles = [
-            [
-                'name' => 'light',
-                'label' => 'Light',
-                'isDefault' => true,
-            ],
-            [
-                'name' => 'dark',
-                'label' => 'Dark',
-            ]
-        ];
-
-        /**
          * The block preview example data.
          *
          * @var array

@@ -140,7 +140,7 @@ module.exports = {
         cardAccentText : '#f54747',
 
         headerBg: '#0c1d36',
-        headerBgSecondary: '#0c1d36',
+        headerBgSecondary: '#0d3975',
         headerText: '#ffffff',
         headerMuted: '#ffffff',
         headerAccent: '#008DFF',

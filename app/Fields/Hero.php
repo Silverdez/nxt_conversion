@@ -26,7 +26,7 @@ class Hero extends Field
             ->addText('title', [
                 'label' => 'Hero Title',
                 'instructions' => 'H1 Title of the hero',
-                'required' => 1,
+                'required' => 0,
             ])
             ->addTextarea('hero_description', [
                 'label' => 'Hero Description',

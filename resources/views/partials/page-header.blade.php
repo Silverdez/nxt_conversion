@@ -3,7 +3,7 @@
                      background-repeat: no-repeat;
                      background-position: 50% 50%;
                      background-size: cover;">
-  <div class="p4-24 md:pt-32 pb-24 bg-gradient-to-t from-globalBg bg-accent bg-opacity-80 h-full flex flex-col">
+  <div class="pt-24 md:pt-32 pb-24 bg-gradient-to-t from-globalBg bg-accent bg-opacity-80 h-full flex flex-col">
     <div class="container mx-auto">
       <div class="w-full md:w-4/6 px-6">
         <h1 class="noDecoration">{!! $title !!}</h1>

@@ -10,15 +10,11 @@ import barbaPrefetch from '@barba/prefetch';
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Glide ,{ Controls } from '@glidejs/glide'
 
 // Our modules
 import MobileMenu from "./modules/MobileMenu";
-import Slider from "./modules/Slider";
 import TabItems from "./modules/TabItems";
 
-
-// import Transitions from './transitions';
 
 /**
  * app.main
@@ -75,46 +71,10 @@ import.meta.webpackHot?.accept(main);
     scrollY = barba.history.current.scroll.y;
   });
 
-  // barba.init({
-  //   timeout: 15000,
-  //   debug: true,
-  //   transitions: [{
-  //     name: 'default-transition',
-  //     // BEFORE
-  //     before: () => {},
-  //     // before,
-  //     beforeLeave: () => {},
-  //     leave: (data) => {
-  //       return gsap.to(data.current.container, {
-  //         opacity: 0
-  //       });
-  //     },
-  //     beforeEnter: () => {
-  //       // then later in the code...
-  //       window.scrollTo(scrollX, scrollY);
-  //     },
-  //     enter:(data) => {
-  //       return gsap.from(data.next.container, {
-  //         opacity: 0
-  //       });
-  //     },
-  //     afterEnter: () => {},
-  //     after: () => { }
-  //   }]
-  // });
-
   testimonials.forEach(testimonial => {
     let cards = testimonial.querySelectorAll('li');
     let randomNum = Math.floor((Math.random() * cards.length));
     cards[randomNum].classList.add('hidden');
-
-    // gsap.to(cards[randomNum], {
-    //   opacity: 0,
-    //   duration: 0.65,
-    //   onComplete: args => {
-    //
-    //   }
-    // })
   })
 
   document.addEventListener("scroll", function() {

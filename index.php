@@ -20,23 +20,5 @@
 
     <?php do_action('get_footer'); ?>
     <?php wp_footer(); ?>
-
-    <script>
-      // inline loadJS
-      function loadJS(e, t) {
-        "use strict";
-        let n = window.document.getElementsByTagName("script")[0],
-          o = window.document.createElement("script");
-        return o.src = e, o.async = !0, n.parentNode.insertBefore(o, n), t && "function" == typeof t && (o.onload = t), o
-      }
-      // then load your JS
-      if (sessionStorage.getItem('fonts-loaded')) {
-        // fonts cached, add class to document
-        document.documentElement.classList.remove('fonts-loading');
-      } else {
-        // load script with font observing logic
-        //loadJS("<?php //get_theme_file_uri('/dist/scripts/font-css-async.js') ?>//");
-      }
-    </script>
   </body>
 </html>

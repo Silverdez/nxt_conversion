@@ -3,7 +3,7 @@
     <div class="container mx-auto flex flex-col lg:flex-row items-center lg:items-start h-full justify-between px-6">
       <div class="footer_site-logo mb-8 lg:mb-0">
         <a class="brand" href="{{ home_url('/') }}">
-          @svg('images.logo_nxt_conversion_h', ['class' => 'logo'])
+          @svg('logo_nxt_conversion_h', ['class' => 'logo'])
         </a>
       </div>
 
