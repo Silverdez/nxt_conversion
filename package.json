@@ -18,12 +18,12 @@
     "translate:mo": "wp i18n make-mo ./resources/lang ./resources/lang"
   },
   "devDependencies": {
-    "@roots/bud": "^5.7.7",
-    "@roots/bud-babel": "^5.7.7",
-    "@roots/bud-postcss": "^5.7.7",
-    "@roots/bud-sass": "^5.7.7",
-    "@roots/bud-tailwindcss": "^5.8.5",
-    "@roots/sage": "^5.7.7",
+    "@roots/bud": "^5.8.7",
+    "@roots/bud-babel": "^5.8.7",
+    "@roots/bud-postcss": "^5.8.7",
+    "@roots/bud-sass": "^5.8.7",
+    "@roots/bud-tailwindcss": "^5.8.7",
+    "@roots/sage": "^5.8.7",
     "@wordpress/babel-preset-default": "^6.9.0",
     "@wordpress/browserslist-config": "^4.1.2",
     "@wordpress/dependency-extraction-webpack-plugin": "^3.4.1",
@@ -34,7 +34,7 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.13",
     "sass": "^1.51.0",
-    "sass-loader": "^12.6.0"
+    "sass-loader": "^13.0.0"
   },
   "dependencies": {
     "@barba/core": "^2.9.7",
