@@ -1807,12 +1807,12 @@
   resolved "https://registry.npmjs.org/@wordpress/browserslist-config/-/browserslist-config-4.1.2.tgz"
   integrity sha512-UH0Ifmm4tEjVPOtiqH6yxDvk2EKtqSAhnyhyfSIb0wUnEoGsWTjREZjzuhgjt/I2nTqfg+0gUSzL5D0yQH6wDQ==
 
-"@wordpress/dependency-extraction-webpack-plugin@^3.4.1":
-  version "3.5.0"
-  resolved "https://registry.npmjs.org/@wordpress/dependency-extraction-webpack-plugin/-/dependency-extraction-webpack-plugin-3.5.0.tgz"
-  integrity sha512-LxW0Ii08X6ny4yfQL/CuXVIvcClki7/FNbe4xnZG1GrF3PSzde5a0FabI/exJhDQY6RFdRGiraUDLbOtbymfqw==
+"@wordpress/dependency-extraction-webpack-plugin@^4.10.0":
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/@wordpress/dependency-extraction-webpack-plugin/-/dependency-extraction-webpack-plugin-4.10.0.tgz#915dd34ff7ee67ea49ff5299f67e4d578dfa877a"
+  integrity sha512-5eva2YApYN7l6lck9AXDLij6SCwGJ0Y+IwJpr0+BiPL0ENSq9HoAB93BhLizZWr98pQuBtz7D0vhqKCRXGtWtQ==
   dependencies:
-    json2php "^0.0.4"
+    json2php "^0.0.7"
     webpack-sources "^3.2.2"
 
 "@wordpress/element@^4.7.0":
@@ -4061,10 +4061,10 @@ json-schema-traverse@^1.0.0:
   resolved "https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz"
   integrity sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==
 
-json2php@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.npmjs.org/json2php/-/json2php-0.0.4.tgz"
-  integrity sha1-a9haHdpqXdfpECK7JEA8wbfC7jQ=
+json2php@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/json2php/-/json2php-0.0.7.tgz#55d9aaafe6db63244e90ad4a339a3e0afefa0ad4"
+  integrity sha512-dnSoUiLAoVaMXxFsVi4CrPVYMKOuDBXTghXSmMINX44RZ8WM9cXlY7UqrQnlAcODCVO7FV3+8t/5nDKAjimLfg==
 
 json5@^1.0.1:
   version "1.0.1"
